@@ -99,8 +99,9 @@ app.get('/resetpassword/:token', (req, res) => {
 });
 
 // Handle SPA routing - serve index.html for any other routes not handled on backend
+// Root route - return JSON for API tests
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../public/index.html'));
+  res.status(200).json({ message: 'Hello World!' });
 });
 
 // Catch-all route for any other frontend routes
