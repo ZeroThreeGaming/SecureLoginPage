@@ -1,5 +1,5 @@
 {
-  "name": "my_project",
+  "name": "secure-login-page",
   "version": "1.0.0",
   "description": "A new project repository.",
   "main": "src/index.js",
@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "supertest": "^7.1.1"
   }
 }
